@@ -2,9 +2,12 @@
   "name": "exploring-assemblyscript",
   "version": "1.0.0",
   "description": "Exploring AssemblyScript via. the official guide",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve ."
   },
   "repository": {
     "type": "git",
@@ -13,10 +16,20 @@
   "keywords": [
     "AssemblyScript"
   ],
-  "author": "\"Wafi (https://github.com/wafibismail)",
+  "author": "Wafi (https://github.com/wafibismail)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wafibismail/exploring-AssemblyScript/issues"
   },
-  "homepage": "https://github.com/wafibismail/exploring-AssemblyScript#readme"
+  "homepage": "https://github.com/wafibismail/exploring-AssemblyScript#readme",
+  "devDependencies": {
+    "assemblyscript": "^0.20.6"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  }
 }
