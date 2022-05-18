@@ -1,0 +1,22 @@
+{
+  "name": "exploring-assemblyscript",
+  "version": "1.0.0",
+  "description": "Exploring AssemblyScript via. the official guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wafibismail/exploring-AssemblyScript.git"
+  },
+  "keywords": [
+    "AssemblyScript"
+  ],
+  "author": "\"Wafi (https://github.com/wafibismail)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wafibismail/exploring-AssemblyScript/issues"
+  },
+  "homepage": "https://github.com/wafibismail/exploring-AssemblyScript#readme"
+}
